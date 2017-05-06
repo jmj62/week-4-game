@@ -1,78 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Crystal Collector</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<html>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+	  src="http://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous"></script>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- jQuery -->
-<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- style sheet -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<head>
+		<title>Crystal Collector!</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class= "jumbotron">
+				<h1>Crystal Collector</h1>
+			</div>
+			<!--  creates the instructions  -->
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title">Instructions</div>
+				</div>
 
-<!-- animate CSS -->
-<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+				<div class= "panel-body">
+					You will be given a random number at the start of the game.
+					<br><br>
+					There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+					<br><br>
+				</div>
+			</div>
 
-<!-- font -->
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+			<div class="panel panel-default" id= "panelStyle">
+				<div class= "panel-body">
+					<img src="assets/images/Gem1.png" class=JewelStyle id="one">
+					<img src="assets/images/gem2.png" class=JewelStyle id="two">
+					<img src="assets/images/gem3.png" class=JewelStyle id= "three">
+					<img src="assets/images/gem4.png" class=JewelStyle id= "four">
+				</div>
+			</div>
+			<div class="panel panel-default" id= "panelStyle">
+				<div class= "panel-body">
+					<h4 id = "firstbox">Number to match: <span id= "number"></span></h4>
+					<h4 id = "secondbox">Your number: <span id="Combined"></span></h4>
+				</div>
+			</div>
+			<div class="panel panel-default" id= "panelStyle">
+				<div class= "panel-body">
+					<h4>
+					Wins: <span id= "numberWins"></span>
+					<br>
+					Losses: <span id= "numberLosses"></span>
+					</h4>
+				</div>
+			</div>
+		</div>
 
-</head>
-<body>
-
-<div class="container">
-	<div class="jumbotron">
-	  <h1>Crystal Collector</h1>
-	  <p>Click a Gem to play</p>
-	  <p>Each gem has a random value between 1 and 12. Try to equal the total without going over!</p>
-
-	</div>
-
-<!--Game board -->
-<div class="row">
-
-	<div class="col-lg-5">
-		<h1 >Goal</h1>
-		<div id="goal" class="game"> </div>
-	</div>
-
-	<div class="col-lg-2">
-		<p id="wins">Wins: 0</p>
-		<p id="losses">Losses: 0</p>
-		<div class="outcome" class="game"></div>
-	</div>
-
-	<div class="col-lg-5">
-		<h1> Score you have</h1>
-		<div id="score" class="game"></div>
-	</div>
-
-</div>
-
-<!-- gems -->
-<div class="row" id="pieces">
-	<img src="assets/images/Gem1.jpg" alt="Gem 1" class="gems" id="gem1">
-	<img src="assets/images/Gem2.jpg" alt="Gem 2" class="gems" id="gem2">
-	<img src="assets/images/Gem3.jpg" alt="Gem 3" class="gems" id="gem3">
-	<img src="assets/images/Gem4.jpg" alt="Gem 4" class="gems" id="gem4">
-
-</div>
-
-
-
-
-
-
-
-
-</div>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+		<script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
+		<script src="assets/javascript/game.js"></script>
+	</body>
 </html>

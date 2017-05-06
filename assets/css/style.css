@@ -1,37 +1,18 @@
 body{
-	background:#52C6D7;
+	background: url("background.jpg")no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 .jumbotron{
 	text-align: center;
+	margin-top: 10px;
 }
-
-.row{
-	font-family: 'Poiret One', cursive;
+.panel-heading{
+	background-color: #F1D487;
 }
-
-.col-lg-5{
-	background: #99CCFF;
-	text-align: center;
-	border: solid 1px black;
-	height:200px;
-	font-size: 30px;
-}
-
-.col-lg-2{
-	text-align: center;
-}
-
-#pieces{
-	border: solid 1px black;
-	text-align: center;
-	margin-top:20px;
-	padding:20px;
-	background: #775BAF;
-
-}
-
-.gems{
-	width: 100px;
-	height: 100px
+#panelStyle{
+	float:left;
+	margin: 10px 20px 10px 0px;
 }
